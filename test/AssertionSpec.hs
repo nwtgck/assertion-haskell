@@ -16,13 +16,6 @@ main = hspec spec
 
 spec :: Spec
 spec = do
-  describe "myAssert" $ do
-    it "should pass" $ do
-      myAssert True 'a' `shouldBe` 'a'
-    
-    it "should be failed" $ do
-      evaluate (myAssert False 'a') `shouldThrow` errorCall "assertion failed"
-
   describe "assert" $ do
     it "should pass" $ do
       let a = "hello"
@@ -36,12 +29,12 @@ spec = do
       let actual = [assert|a == "hello, world" && b > 99999|]
       evaluate actual `shouldThrow` errorCall "Assertion failed: 'a == \"hello, world\" && b > 99999'"
 
-    describe "staticAssert" $ do
-      it "should pass" $ do
-        let actual = $(staticAssert (length "hello" == 5 && 10 > 3))
-        actual `shouldBe` ()
-      
-      it "should be compile error" $ do
-        -- NOTE: Compile error (GOOD!)
-        -- let actual = $(staticAssert (length "hello" > 99999))
-        1 `shouldBe` 1
+  describe "staticAssert" $ do
+    it "should pass" $ do
+      let actual = $(staticAssert (length "hello" == 5 && 10 > 3))
+      actual `shouldBe` ()
+    
+    it "should be compile error" $ do
+      -- NOTE: Compile error (GOOD!)
+      -- let actual = $(staticAssert (length "hello" > 99999))
+      1 `shouldBe` 1

@@ -7,11 +7,6 @@ import qualified Language.Haskell.TH.Quote as TH.Quote
 import qualified Language.Haskell.Meta as Haskell.Meta
 import qualified Control.Monad as Monad
 
--- | assert
-myAssert :: Bool -> a -> a
-myAssert False _ = error "assertion failed"
-myAssert _     x = x
-
 -- | Assert
 assert :: TH.Quote.QuasiQuoter
 assert = TH.Quote.QuasiQuoter
