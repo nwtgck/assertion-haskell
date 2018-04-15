@@ -1,6 +1,11 @@
 # assertion
 
-Assertion with condition string representation in Haskell.
+| branch | status|
+| --- | --- |
+| [`master`](https://github.com/nwtgck/assertion-haskell/tree/master) | [![Build Status](https://travis-ci.org/nwtgck/assertion-haskell.svg?branch=master)](https://travis-ci.org/nwtgck/assertion-haskell) |
+| [`develop`](https://github.com/nwtgck/assertion-haskell/tree/develop) | [![Build Status](https://travis-ci.org/nwtgck/assertion-haskell.svg?branch=master)](https://travis-ci.org/nwtgck/assertion-haskell) |
+
+Assertion with condition string representation in Haskell
 
 ## Usage
 
