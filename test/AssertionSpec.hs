@@ -22,15 +22,15 @@ spec = do
     it "should be failed" $ do
       evaluate (myAssert False 'a') `shouldThrow` errorCall "assertion failed"
 
-  describe "assertM" $ do
+  describe "assert" $ do
     it "should pass" $ do
       let a = "hello"
       let b = 10
-      actual <- [assertM|a == "hello" && b > 3|]
+      let actual = [assert|a == "hello" && b > 3|]
       actual `shouldBe` ()
 
     it "should be failed" $ do
       let a = "hello"
       let b = 10
-      let actual = [assertM|a == "hello, world" && b > 99999|] :: IO ()
+      let actual = [assert|a == "hello, world" && b > 99999|]
       evaluate actual `shouldThrow` errorCall "Assertion failed: 'a == \"hello, world\" && b > 99999'"
