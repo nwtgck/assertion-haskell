@@ -24,7 +24,9 @@ dependencies:
 
 library:
  source-dirs: src
- dependencies: []
+ dependencies:
+ - template-haskell
+ - haskell-src-meta
 
 tests:
   assertion-test:
