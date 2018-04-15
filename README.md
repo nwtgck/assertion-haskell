@@ -7,6 +7,29 @@
 
 Assertion with condition string representation in Haskell
 
+## Install
+
+Add this library to your `stack.yaml` like the following if you use [Stack](https://docs.haskellstack.org/en/stable/README/).
+
+```yaml
+...
+extra-deps:
+- git: https://github.com/nwtgck/assertion-haskell.git
+  commit: 4340a96555606d590d54669b9ae992a5b8c9a10d
+...
+```
+
+Then, add `assertion` to your `package.yaml`.
+
+```yaml
+...
+library:
+ dependencies:
+ - assertion
+...
+```
+
+
 ## Usages
 
 ### `assert`
