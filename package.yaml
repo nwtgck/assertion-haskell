@@ -1,5 +1,5 @@
 name:                assertion
-version:             0.1.0.0
+version:             0.1.0
 github:              "nwtgck/assertion"
 license:             BSD3
 author:              "Ryo Ota"
@@ -11,13 +11,13 @@ extra-source-files:
 - CHANGELOG.md
 
 # Metadata used when publishing your package
-synopsis:            Short description of your package
+synopsis:            Assertion with condition string representation
 # category:            Web
 
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on Github at <https://github.com/nwtgck/assertion#readme>
+description:         Please see the README on Github at <https://github.com/nwtgck/assertion-haskell#readme>
 
 dependencies:
 - base >= 4.7 && < 5
