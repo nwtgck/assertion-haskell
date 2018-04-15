@@ -1,10 +1,3 @@
-# assertion
-
-Assertion with condition string representation in Haskell.
-
-## Usage
-
-```hs
 {-# LANGUAGE QuasiQuotes #-}
 
 import Assertion
@@ -16,8 +9,3 @@ main = do
   [assertM|a == "hello" && b > 9999999|]
   
   putStrLn "End!"
-```
-
-```
-ExampleMain.hs: Assertion failed: 'a == "hello" && b > 9999999'
-```
