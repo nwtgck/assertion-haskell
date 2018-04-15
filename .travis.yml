@@ -47,5 +47,7 @@ after_script:
 script:
 # Build the package, its tests, and its docs and run the tests
 - stack --no-terminal test --haddock --no-haddock-deps --coverage
-# Run example (NOTE: Should be failed)
+# Run example (NOTE: Should be runtime error)
 - test ! `stack runghc examples/ExampleMain.hs`
+# Run example (NOTE: Should be compile error)
+- test ! `stack runghc examples/StaticAssertExample`
