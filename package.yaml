@@ -3,7 +3,7 @@ version:             0.1.0
 github:              "nwtgck/assertion"
 license:             BSD3
 author:              "Ryo Ota"
-maintainer:          "nwtgck@gmail.com"
+maintainer:          "nwtgck@nwtgck.org"
 copyright:           "2018 Ryo Ota"
 
 extra-source-files:
